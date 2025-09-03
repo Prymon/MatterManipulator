@@ -86,7 +86,7 @@ public abstract class AbstractBuildable extends MMInventory implements IBuildabl
         super(player, state, tier);
     }
 
-    protected static final double EU_PER_BLOCK = 128.0, TE_PENALTY = 16.0, EU_DISTANCE_EXP = 1.25;
+    protected static final double EU_PER_BLOCK = 32.0, TE_PENALTY = 16.0, EU_DISTANCE_EXP = 1.25;
 
     public boolean tryConsumePower(ItemStack stack, World world, int x, int y, int z, ImmutableBlockSpec spec) {
         int hardness = (int) spec.getBlock().getBlockHardness(world, x, y, z);
